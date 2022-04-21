@@ -16,16 +16,16 @@ def es_vocal_if(letra: str) -> bool:
 
     Referencia: https://docs.python.org/3/library/stdtypes.html#string-methods
     """
-    
-    if letra == "a" or letra == "A":
+    letra = letra.lower()
+    if letra == "a":
         return True
-    if letra == "e" or letra == "E":
+    if letra == "e":
         return True
-    if letra == "i" or letra == "I":
+    if letra == "i":
         return True
-    if letra == "o" or letra == "O":
+    if letra == "o":
         return True
-    if letra == "u" or letra == "U":
+    if letra == "u":
         return True
     return False
 
