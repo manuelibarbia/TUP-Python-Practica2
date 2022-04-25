@@ -53,7 +53,10 @@ def es_vocal_if_in(letra: str) -> bool:
 
     Referencia: https://docs.python.org/3/reference/expressions.html#membership-test-operations # noqa: E501
     """
-
+    letra = letra.lower()
+    if letra in ("a", "e", "i", "o", "u"):
+        return True
+    return False
 
 # NO MODIFICAR - INICIO
 assert es_vocal_if_in("a")
@@ -74,7 +77,9 @@ def es_vocal_in(letra: str) -> bool:
         - No utilizar FOR.
         - No utilizar listas.
     """
-
+    letra = letra.lower()
+    letra = (letra in ("a", "e", "i", "o", "u"))
+    return letra
 
 # NO MODIFICAR - INICIO
 assert es_vocal_in("a")
