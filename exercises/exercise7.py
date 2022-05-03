@@ -11,7 +11,11 @@ def superposicion_basico(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool
         - Utilizar dos bucles FOR anidados.
         - Utilizar dos returns.
     """
-
+    for i in range(len(lista_1)):
+        for x in range(len(lista_2)):
+            if lista_1[i] == lista_2[x]:
+                return True        
+    return False
 
 # NO MODIFICAR - INICIO
 test_list = [1, "hello", 35.20]
@@ -30,7 +34,11 @@ def superposicion_in(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
         - Utilizar un único bucle FOR.
         - Utilizar dos returns.
     """
-
+    for i in range(len(lista_1)):
+        iguales = lista_1[i] in lista_2
+        if iguales:
+            return True
+    return False
 
 # NO MODIFICAR - INICIO
 test_list = [1, "hello", 35.20]
@@ -52,7 +60,7 @@ def superposicion_any(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
 
     Referencia: https://docs.python.org/3/library/functions.html#any
     """
-
+    return any(set(lista_1) & set(lista_2)) #CONSULTAR
 
 # NO MODIFICAR - INICIO
 test_list = [1, "hello", 35.20]
