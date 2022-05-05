@@ -54,7 +54,9 @@ def combinar_enumerate(nombres: List[str], precios: List[float], ids: List[int])
 
     Referencia: https://docs.python.org/3/library/functions.html#enumerate
     """
-
+    respuesta = []
+    for i, n in enumerate(nombres):
+        print (i, n)
 
 # NO MODIFICAR - INICIO
 respuesta = (
