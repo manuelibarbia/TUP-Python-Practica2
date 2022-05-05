@@ -12,7 +12,7 @@ def numeros_al_final_basico(lista: List[Union[float, str]]) -> List[Union[float,
         - Utilizar la función type.
         - No utilizar índices.
     """
-    for n in range(3): #realizar consulta
+    for n in range(len(lista)):
         if type(lista[n]) == int:
             lista.append(lista[n])
             lista.remove(lista[n])

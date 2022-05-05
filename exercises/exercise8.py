@@ -22,7 +22,10 @@ def combinar_basico(nombres: List[str], precios: List[float]) -> Tuple[Any]:
         - Utilizar la función range.
         - Utilizar índices.
     """
-
+    respuesta = []
+    for i in range(len(nombres)):
+        respuesta.append((nombres[i], precios[i]))
+    return tuple(respuesta)
 
 # NO MODIFICAR - INICIO
 respuesta = (
