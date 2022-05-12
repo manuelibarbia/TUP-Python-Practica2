@@ -63,7 +63,7 @@ Escribir una función lambda que eleve los elementos al cubo
 Restricción: Utilizar List, map y lambda y la variable numeros
 """
 
-#numeros_al_cubo =  # Completar
+numeros_al_cubo = list(map(lambda x: x**3, numeros))
 
 """
 Escribir una función lambda que permita filtrar todos los elementos pares
@@ -71,7 +71,7 @@ Escribir una función lambda que permita filtrar todos los elementos pares
 Restricción: Utilizar List, filter, lambda y la variable numeros_al_cubo
 """
 
-#numeros_al_cubo_pares =  # Completar
+numeros_al_cubo_pares =  list(filter(lambda x: x%2==0, numeros_al_cubo))
 
 
 """
@@ -82,7 +82,7 @@ Restricción: Utilizar reduce, lambda y la variable numeros_al_cubo_pares
 
 from functools import reduce  # noqa: E402
 
-#suma_numeros_al_cubo_pares =  # Completar
+suma_numeros_al_cubo_pares = reduce(lambda x, y : x + y, numeros_al_cubo_pares)
 
 
 # NO MODIFICAR - INICIO
