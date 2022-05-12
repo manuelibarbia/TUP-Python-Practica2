@@ -1,2 +1,1 @@
-
-    print (iguales)
+return suma
